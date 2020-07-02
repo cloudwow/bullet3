@@ -32,7 +32,8 @@ btQuadWord
 class btQuadWord
 #endif
 {
-protected:
+public:
+    // made public for quick serialization
 #if defined(__SPU__) && defined(__CELLOS_LV2__)
 	union {
 		vec_float4 mVec128;

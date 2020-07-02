@@ -28,6 +28,8 @@ subject to the following restrictions:
 ATTRIBUTE_ALIGNED16(class)
 btTransform
 {
+public:
+    // made public for quick serialization
 	///Storage for the rotation
 	btMatrix3x3 m_basis;
 	///Storage for the translation
